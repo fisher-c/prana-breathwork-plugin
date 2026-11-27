@@ -38,7 +38,6 @@
       "Compare Box Breathing and Equal Breathing"
     ],
     "brandColor": "#A99BC4",
-    "composerIcon": "./assets/icon.svg",
-    "logo": "./assets/logo.svg"
+    "composerIcon": "./assets/icon.svg"
   }
 }
