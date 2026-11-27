@@ -1,0 +1,45 @@
+{
+  "name": "prana",
+  "version": "0.2.4",
+  "description": "Choose, compare, and conduct short Prana breathwork sessions with conservative general-wellness guidance.",
+  "author": {
+    "name": "Prana",
+    "email": "prana@pranabreathworks.com",
+    "url": "https://pranabreathworks.com/"
+  },
+  "homepage": "https://pranabreathworks.com/",
+  "repository": "https://github.com/fisher-c/prana-breathwork-plugin",
+  "license": "0BSD",
+  "keywords": [
+    "breathwork",
+    "breathing",
+    "pranayama",
+    "meditation",
+    "wellness",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Prana: Breathwork Meditation",
+    "shortDescription": "Choose and conduct short breathing practices",
+    "longDescription": "Prana brings its public breathwork catalog and deterministic guided-session protocol into ChatGPT and Codex. Compare breathing techniques, choose a conservative practice from explicit preferences, conduct a short text or voice-guided session in a compatible host, or open the matching session in the Prana app. This release is anonymous and does not access account history, mood, biometrics, subscriptions, or private health data.",
+    "developerName": "Prana",
+    "category": "Healthcare",
+    "capabilities": [
+      "Read"
+    ],
+    "websiteURL": "https://pranabreathworks.com/",
+    "privacyPolicyURL": "https://pranabreathworks.com/privacy",
+    "termsOfServiceURL": "https://pranabreathworks.com/terms",
+    "defaultPrompt": [
+      "Start a one-minute Box Breathing session",
+      "I'm stressed before a meeting. Choose a one-minute breathing practice to help me calm down",
+      "Compare Box Breathing and Equal Breathing"
+    ],
+    "brandColor": "#A99BC4",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/logo.svg",
+    "logoDark": "./assets/logo-dark.svg"
+  }
+}

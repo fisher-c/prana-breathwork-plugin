@@ -1,0 +1,29 @@
+{
+  "name": "prana",
+  "displayName": "Prana: Breathwork Meditation",
+  "version": "0.2.4",
+  "description": "Breathwork and pranayama for calm, focus, sleep, and energy. Choose, compare, and follow short guided Prana breathing sessions with conservative general-wellness guidance.",
+  "author": {
+    "name": "Prana",
+    "email": "prana@pranabreathworks.com",
+    "url": "https://pranabreathworks.com/"
+  },
+  "homepage": "https://pranabreathworks.com/ai",
+  "repository": "https://github.com/fisher-c/prana-breathwork-plugin",
+  "license": "0BSD",
+  "privacyPolicyUrl": "https://pranabreathworks.com/privacy",
+  "keywords": [
+    "breathwork",
+    "breathing",
+    "pranayama",
+    "meditation",
+    "mindfulness",
+    "wellness",
+    "calm",
+    "stress",
+    "relaxation",
+    "sleep",
+    "focus",
+    "box breathing"
+  ]
+}

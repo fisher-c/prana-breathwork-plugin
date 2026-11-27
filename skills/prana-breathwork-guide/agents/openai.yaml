@@ -1,0 +1,11 @@
+interface:
+  display_name: "Prana Breathwork Guide"
+  short_description: "Choose and conduct safe Prana sessions"
+  default_prompt: "Use $prana-breathwork-guide to choose a short breathing practice for me."
+dependencies:
+  tools:
+    - type: "mcp"
+      value: "prana"
+      description: "Prana public breathwork catalog and guided-session protocol"
+      transport: "streamable_http"
+      url: "https://pranabreathworks.com/api/mcp"

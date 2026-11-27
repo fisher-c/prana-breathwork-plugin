@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "prana": {
+      "type": "http",
+      "url": "https://pranabreathworks.com/api/mcp"
+    }
+  }
+}

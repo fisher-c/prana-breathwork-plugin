@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title">
+  <title id="title">Prana</title>
+  <rect width="256" height="256" rx="64" fill="#F4F0EA"/>
+  <circle cx="128" cy="128" r="76" fill="none" stroke="#A99BC4" stroke-width="12"/>
+  <path d="M128 72c-28 22-42 44-42 66 0 24 19 43 42 43s42-19 42-43c0-22-14-44-42-66Z" fill="#A99BC4"/>
+  <path d="M128 96c-13 15-20 29-20 41 0 11 9 20 20 20s20-9 20-20c0-12-7-26-20-41Z" fill="#F4F0EA"/>
+</svg>
