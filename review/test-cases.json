@@ -12,8 +12,8 @@
     },
     {
       "prompt": "Compare Box Breathing with 4-7-8 Breathing.",
-      "expectedTools": ["compare_breathing_techniques"],
-      "expectedOutcome": "Compares cadence, retention, intensity, common uses, duration options, and cautions."
+      "expectedTools": ["get_breathing_technique"],
+      "expectedOutcome": "Looks up both techniques and compares cadence, retention, intensity, common uses, duration options, and cautions."
     },
     {
       "prompt": "Choose a gentle one-minute Prana practice for focus. I am a beginner and want to avoid breath holds.",
@@ -22,11 +22,11 @@
     },
     {
       "prompt": "Create a one-minute text-guided Box Breathing session with no voice guidance.",
-      "expectedTools": ["create_guided_breathwork_session"],
+      "expectedTools": ["prepare_guided_breathwork_session"],
       "expectedOutcome": "Returns a complete versioned protocol with integer timing fields; it does not claim playback started."
     },
     {
-      "prompt": "Open the one-minute Box Breathing session in Prana.",
+      "prompt": "Open the one-minute Box Breathing session in the Prana app.",
       "expectedTools": ["get_prana_session_link"],
       "expectedOutcome": "Returns a user-initiated deep link with autoplay disabled and leaves entitlement and safety checks to the app."
     }

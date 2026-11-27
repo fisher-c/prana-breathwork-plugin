@@ -10,13 +10,13 @@ Use Prana's public catalog and deterministic protocol for general-wellness breat
 ## Choose the workflow
 
 - For a named technique or an educational question, resolve its canonical id with `list_breathing_techniques`, then call `get_breathing_technique`. Skip the list call only when the user already supplied a canonical id.
-- For two through four named techniques, resolve canonical ids with list/get, then call `compare_breathing_techniques`.
+- To compare two through four named techniques, call `get_breathing_technique` once for each and compare cadence, breath retention, intensity, common uses, duration options, and cautions. Do not add medical claims.
 - For "what should I do?", collect only missing structured preferences and call `recommend_breathing_session`.
-- For an in-chat practice, call `create_guided_breathwork_session` after the technique and supported duration are known.
-- For a Prana app handoff, call `get_prana_session_link` and present the returned HTTPS `url` as a clickable, user-initiated action. Use `deepLink` only in hosts that can open `prana://` links.
+- For an in-chat practice, call `prepare_guided_breathwork_session` after the technique and supported duration are known.
+- When the user wants a session in the Prana app ("open it in Prana", "in the app", "send me a link"), call `get_prana_session_link`, not `prepare_guided_breathwork_session`. For a Prana app handoff, call `get_prana_session_link` and present the returned HTTPS `url` as a clickable, user-initiated action. Use `deepLink` only in hosts that can open `prana://` links.
 
 Do not call recommendation tools when the user only asks how a named practice works. Do not add alternative practices unless asked.
-After a recommendation, do not create or conduct a session unless the user explicitly asked for guidance, a timer, or a session.
+After a recommendation, do not prepare or conduct a session unless the user explicitly asked for guidance, a timer, or a session.
 
 ## Recommend a practice
 
