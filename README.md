@@ -11,20 +11,35 @@ Prana brings its public breathwork catalog and guided-session protocol into Clau
 - "I want to wind down for sleep. What breathing practice should I try?"
 - "Compare Box Breathing and Equal Breathing"
 
+## Shortcut commands
+
+In Claude Code, set up a session with one command. Where Claude can show Prana's timer, it starts when you press start.
+
+| Command | What it does |
+| --- | --- |
+| `/prana:breathe` | Sets up a one-minute Box Breathing session |
+| `/prana:breathe 4-7-8` | Sets up the technique you name, for 1 minute. Common names work: `box`, `4-7-8`, `ujjayi`, `humming bee` |
+| `/prana:breathe 4-7-8 5` | The technique you name, for the number of minutes you give (1 to 15) |
+| `/prana:calm` | Picks a gentle practice for stress and sets it up |
+| `/prana:focus` | Picks a practice for focus and sets it up |
+| `/prana:sleep` | Picks a wind-down practice for sleep and sets it up |
+
+Add a number of minutes to `calm`, `focus`, or `sleep`, for example `/prana:sleep 3`. For intermediate and advanced techniques, Claude shares the cautions and asks you to confirm before starting.
+
 ## What's included
 
 - **Prana MCP server**, a remote Streamable HTTP server at `https://pranabreathworks.com/api/mcp`. It needs no sign-in.
 - **Prana Breathwork Guide skill**, which helps Claude pick the right tool for each request and keep guidance brief.
+- **Four shortcut commands** for Claude Code, listed above.
 
-The server provides six read-only tools:
+The server provides five read-only tools. None of them saves anything or changes an account:
 
 | Tool | What it does |
 | --- | --- |
 | `list_breathing_techniques` | Lists the published Prana techniques |
-| `get_breathing_technique` | Explains one technique: steps, timing, and cautions |
-| `compare_breathing_techniques` | Compares two to four techniques side by side |
+| `get_breathing_technique` | Explains one technique: steps, timing, intensity, and cautions. Claude compares techniques by looking up each one |
 | `recommend_breathing_session` | Suggests a conservative session from your stated preferences |
-| `create_guided_breathwork_session` | Builds a short guided session with an in-chat timer where supported |
+| `prepare_guided_breathwork_session` | Prepares a short guided session with an in-chat timer where supported. The timer starts only when you press start |
 | `get_prana_session_link` | Returns a link to open the matching session in the Prana app |
 
 ## Breathing techniques
