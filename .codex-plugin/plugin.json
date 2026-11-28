@@ -1,6 +1,6 @@
 {
   "name": "app-6a8d17d55a848191bffd4007b383d920",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Explore Prana’s public catalog, get a breathing practice recommendation, and prepare short guided sessions for general wellness.",
   "author": {
     "name": "Prana",
@@ -95,7 +95,7 @@
         }
       },
       "publication": {
-        "release_notes": "Updates the listing and bundled skill package for the five-tool Prana server. The renamed timer tool prepares an in-chat session without saving it. Technique comparisons use public catalog lookup, and app handoff uses a user-clicked HTTPS link."
+        "release_notes": "Updates the listing and bundled skill package for the five-tool Prana server. The renamed timer tool prepares an in-chat session without saving it. Technique comparisons use public catalog lookup, and app handoff uses a user-clicked HTTPS link. The bundled guide now stops before using tools when asked for medical care, private records, unsupported durations, automatic playback, or entitlement overrides."
       }
     }
   }

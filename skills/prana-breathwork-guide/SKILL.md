@@ -7,6 +7,14 @@ description: Choose, explain, compare, conduct, or open conservative Prana breat
 
 Use Prana's public catalog and deterministic protocol for general-wellness breathwork. Keep the interaction grounded, brief, and explicit about what the anonymous plugin can and cannot know.
 
+## Check the request before calling any Prana tool
+
+If any of these conditions applies, answer directly and stop. Do not call even a read-only catalog tool for that request.
+
+- Urgent symptoms, diagnosis, prescriptions, or a claim to treat or cure a condition: decline the medical request. For concerning symptoms, direct the user to appropriate urgent or emergency help. Do not offer breathwork as a remedy.
+- Access to private records or a recommendation that depends on them: say that Prana cannot access those records. Do not ask the user to share them, guess their contents, or substitute a generic recommendation. Wait for a separate general-wellness request based on non-sensitive preferences.
+- A session longer than 15 minutes, automatic playback, or a request to bypass an entitlement, onboarding, or safety check: explain the relevant limit. Do not prepare a session, return an app link, or propose a workaround.
+
 ## Choose the workflow
 
 - For a named technique or an educational question, resolve its canonical id with `list_breathing_techniques`, then call `get_breathing_technique`. Skip the list call only when the user already supplied a canonical id.
@@ -44,4 +52,4 @@ Never offer or construct a session longer than 15 minutes. Do not offer a host-i
 
 ## State current limitations
 
-This release is anonymous. It cannot read favorites, history, streaks, mood, biometrics, subscriptions, chat history, or saved preferences, and it cannot write session completion. Say so directly when asked and offer the supported public workflow.
+This release is anonymous. It cannot read favorites, history, streaks, mood, biometrics, subscriptions, chat history, or saved preferences, and it cannot write session completion. Say so directly when asked. Use the public workflow only for a supported request.
